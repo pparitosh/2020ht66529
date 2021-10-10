@@ -20,7 +20,7 @@ You are required to perform following tasks:
   - Create Staging & Production Environment - Pending - Completed
   - Deploy changes to Staging Environment - Pending - Completed
   - Deploy changes to Production Environment - Pending - Completed
-  - List the importance and benefits of CI\CD - Pending
+  - List the importance and benefits of CI\CD - Pending - Completed
 
 Bonus Point: Usage of plugins such as AWS or Azure for above tasks is advised
 
