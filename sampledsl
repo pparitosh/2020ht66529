@@ -1,6 +1,6 @@
 pipeline {
   environment {
-    imagename = "arjunm183/nginx"
+    imagename = "pparitosh/nginx"
     registryCredential = 'dockerhubcreds'
     dockerImage = ''
   }
@@ -8,7 +8,7 @@ pipeline {
   stages {
     stage('Cloning Git') {
       steps {
-        git([url: 'https://github.com/researcherarjun/2020ht66535', branch: 'main', credentialsId: 'researcherarjun'])
+        git([url: 'https://github.com/pparitosh/2020ht66529', branch: 'main', credentialsId: 'paritoshgitcreds'])
 
       }
     }
