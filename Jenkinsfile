@@ -9,7 +9,7 @@ node (label: 'stageenv'){
        app = docker.build("pparitosh/nginx")     
      }      
   stage('Push image') {
-       docker.withRegistry('https://registry.hub.docker.com', '	dockerhubcreds') {            
+       docker.withRegistry('https://registry.hub.docker.com', '	paritoshdockerhubcreds') {            
        app.push("${env.BUILD_NUMBER}")            
        app.push("latest")        
               }    
@@ -23,7 +23,7 @@ node (label: 'stageenv'){
   stage('Deploy image on Staging Environment') 
   {
         sh ''' echo "Deploying Container Image" '''
-        docker.withRegistry('https://registry.hub.docker.com', 'dockerhubcreds')  {
+        docker.withRegistry('https://registry.hub.docker.com', 'paritoshdockerhubcreds')  {
         docker.image("pparitosh/nginx:${env.BUILD_NUMBER}").run('--name nginx -p 80:80 -d')
         sh '''
         sleep 5
@@ -38,7 +38,7 @@ node (label: 'prodenv'){
   stage('Deploy image on Production Environment') 
   {
         sh ''' echo "Deploying Container Image" '''
-        docker.withRegistry('https://registry.hub.docker.com', 'dockerhubcreds')  {
+        docker.withRegistry('https://registry.hub.docker.com', 'paritoshdockerhubcreds')  {
         docker.image("pparitosh/nginx:${env.BUILD_NUMBER}").run('--name nginx -p 80:80 -d')
         sh '''
         sleep 5
