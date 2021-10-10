@@ -1,4 +1,4 @@
-# 2020ht66535
+# 2020ht66529
 
 Assignment for Devops - By Group 3
 
@@ -15,7 +15,7 @@ You are required to perform following tasks:
   - Create a Jenkins Pipeline (Describe steps, nodes and various stages included in the pipeline) - Completed.
   - Showcase Build, Test and Deploy stages - Completed
   - Handle possible failures while executing pipeline - Completed
-  - Create one additional branch and handle pull requests - Pending
+  - Create one additional branch and handle pull requests - Completed
   - Make some changes in the source code and integrate - Completed
   - Create Staging & Production Environment - Pending - Almost Completed
   - Deploy changes to Staging Environment - Pending - Almost Completed
