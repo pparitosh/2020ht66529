@@ -17,9 +17,9 @@ You are required to perform following tasks:
   - Handle possible failures while executing pipeline - Completed
   - Create one additional branch and handle pull requests - Completed
   - Make some changes in the source code and integrate - Completed
-  - Create Staging & Production Environment - Pending - Almost Completed
-  - Deploy changes to Staging Environment - Pending - Almost Completed
-  - Deploy changes to Production Environment - Pending - Almost Completed
+  - Create Staging & Production Environment - Pending - Completed
+  - Deploy changes to Staging Environment - Pending - Completed
+  - Deploy changes to Production Environment - Pending - Completed
   - List the importance and benefits of CI\CD - Pending
 
 Bonus Point: Usage of plugins such as AWS or Azure for above tasks is advised
