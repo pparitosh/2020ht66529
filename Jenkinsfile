@@ -34,21 +34,5 @@ node (label: 'stageenv'){
         '''
         }  
   }
-node (label: 'prodenv'){
-  stage('Deploy image on Production Environment ') 
-  {
-        sh ''' echo "Deploying Container Image" '''
-        docker.withRegistry('https://registry.hub.docker.com', 'paritoshdockerhubcreds')  {
-        docker.image("pparitosh/nginx:${env.BUILD_NUMBER}").run('--name nginx -p 80:80 -d')
-        sh '''
-        sleep 5
-        echo "Checking if WebServer is working Post deployment"
-        curl http://localhost
-        docker stop nginx
-        docker rm nginx
-        '''
-        }  
-  }
-}
 
 }
