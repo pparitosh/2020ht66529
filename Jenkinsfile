@@ -35,7 +35,7 @@ node (label: 'stageenv'){
         }  
   }
 node (label: 'prodenv'){
-  stage('Deploy image on Production Environment') 
+  stage('Deploy image on Production Environment ') 
   {
         sh ''' echo "Deploying Container Image" '''
         docker.withRegistry('https://registry.hub.docker.com', 'paritoshdockerhubcreds')  {
